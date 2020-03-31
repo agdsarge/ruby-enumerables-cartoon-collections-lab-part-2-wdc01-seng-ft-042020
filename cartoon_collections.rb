@@ -1,3 +1,4 @@
+require 'pry'
 def square_array(array)
   # Use an Enumerable to square every element in the passed in array
   # Return a new array of the results
@@ -10,8 +11,10 @@ def summon_captain_planet(planeteer_calls)
   # Use an Enumerable to capitalize and add '!' to every element in the passed in array
   # Return a new array of the results
   
-  array.map {|name| name.capitalize + "!"}
-  
+  a = array.map {|name| name.capitalize}
+  bingdings.pry
+  b = a.map {|name| name + "!"}
+  return b
 end
 
 def long_planeteer_calls(planeteer_calls)
