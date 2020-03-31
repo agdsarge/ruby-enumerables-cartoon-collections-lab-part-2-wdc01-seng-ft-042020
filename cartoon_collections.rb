@@ -11,11 +11,7 @@ def summon_captain_planet(planeteer_calls)
   # Use an Enumerable to capitalize and add '!' to every element in the passed in array
   # Return a new array of the results
   
-  a = array.map {|name| name.capitalize}
-  bingdings.pry
-  b = a.map {|name| name + "!"}
-  return b
-end
+  planeteer_calls.map {|name| name.capitalize + "!"}
 
 def long_planeteer_calls(planeteer_calls)
   # Use an Enumerable to check if any string in the passed in array is greater than 4 characters long
